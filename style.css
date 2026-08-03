@@ -1,0 +1,357 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#090909;
+    color:white;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+    background:rgba(0,0,0,.4);
+    backdrop-filter:blur(15px);
+    position:fixed;
+    width:100%;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo img{
+    width:55px;
+}
+
+.logo span{
+    font-size:22px;
+    font-weight:700;
+    color:#9cff00;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:35px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#9cff00;
+}
+
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,.65),
+    rgba(0,0,0,.85)
+    ),
+    url("background.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h1{
+    font-size:70px;
+    color:#9cff00;
+}
+
+.hero p{
+    margin:20px 0;
+    color:#ddd;
+}
+
+button{
+    padding:15px 40px;
+    border:none;
+    border-radius:50px;
+    background:#9cff00;
+    cursor:pointer;
+    font-size:18px;
+    font-weight:bold;
+}.about{
+    padding:100px 80px;
+    text-align:center;
+    background:#111;
+}
+
+.about h2{
+    font-size:45px;
+    color:#9cff00;
+    margin-bottom:20px;
+}
+
+.about p{
+    color:#ccc;
+    max-width:700px;
+    margin:auto;
+}
+
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:50px;
+}
+
+
+.card{
+    background:#1a1a1a;
+    padding:30px;
+    width:300px;
+    border-radius:20px;
+    transition:.3s;
+    border:1px solid #222;
+}
+
+
+.card:hover{
+    transform:translateY(-10px);
+    border-color:#9cff00;
+}
+
+
+.card h3{
+    color:#9cff00;
+    margin-bottom:15px;
+}
+
+
+.card p{
+    color:#aaa;
+}html{
+    scroll-behavior:smooth;
+}
+
+
+/* HERO ANIMATION */
+.hero-content{
+    animation:fadeUp 1.2s ease;
+}
+
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+
+/* BUTTON EFFECT */
+button{
+    transition:.3s;
+}
+
+
+button:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 25px #9cff00;
+}
+
+
+/* NAVBAR EFFECT */
+.navbar{
+    z-index:1000;
+}.portfolio{
+    padding:100px 80px;
+    text-align:center;
+    background:#090909;
+}
+
+.portfolio h2{
+    font-size:45px;
+    color:#9cff00;
+    margin-bottom:50px;
+}
+
+
+.gallery{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+}
+
+
+.work{
+    width:300px;
+    background:#111;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+
+.work:hover{
+    transform:translateY(-10px);
+}
+
+
+.work img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+
+.work h3{
+    padding:20px;
+    color:white;
+}.contact{
+
+    padding:100px 80px;
+    text-align:center;
+    background:#111;
+
+}
+
+
+.contact h2{
+
+    font-size:45px;
+    color:#9cff00;
+    margin-bottom:20px;
+
+}
+
+
+.contact p{
+
+    color:#ccc;
+    margin-bottom:40px;
+
+}
+
+
+
+.social{
+
+    display:flex;
+    justify-content:center;
+    gap:20px;
+
+}
+
+
+
+.social a{
+
+    text-decoration:none;
+    color:white;
+    background:#1a1a1a;
+    padding:15px 30px;
+    border-radius:50px;
+    border:1px solid #333;
+    transition:.3s;
+
+}
+
+
+
+.social a:hover{
+
+    background:#9cff00;
+    color:black;
+    transform:translateY(-5px);
+
+}
+
+
+
+
+footer{
+
+    padding:30px;
+    text-align:center;
+    background:#050505;
+
+}
+
+
+
+footer h3{
+
+    color:#9cff00;
+    font-size:25px;
+    margin-bottom:10px;
+
+}
+
+
+
+footer p{
+
+    color:#777;
+
+}@media(max-width:768px){
+
+    .navbar{
+        padding:20px;
+        flex-direction:column;
+        gap:20px;
+    }
+
+
+    nav a{
+        margin:0 10px;
+        font-size:14px;
+    }
+
+
+    .hero h1{
+        font-size:45px;
+    }
+
+
+    .about,
+    .portfolio,
+    .contact{
+        padding:70px 20px;
+    }
+
+
+    .cards,
+    .gallery{
+        flex-direction:column;
+        align-items:center;
+    }
+
+
+    .card,
+    .work{
+        width:90%;
+    }
+
+
+    .social{
+        flex-direction:column;
+        align-items:center;
+    }
+
+
+    .social a{
+        width:200px;
+    }
+
+}
