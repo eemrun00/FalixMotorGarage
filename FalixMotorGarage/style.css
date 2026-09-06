@@ -1,467 +1,240 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
-}
-
-body{
-    background:#090909;
-    color:white;
-}
-
-.navbar{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 80px;
-    background:rgba(0,0,0,.4);
-    backdrop-filter:blur(15px);
-    position:fixed;
-    width:100%;
-}
-
-.logo{
-    display:flex;
-    align-items:center;
-    gap:10px;
-}
-
-.logo img{
-    width:55px;
-}
-
-.logo span{
-    font-size:22px;
-    font-weight:700;
-    color:#9cff00;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:35px;
-    transition:.3s;
-}
-
-nav a:hover{
-    color:#9cff00;
-}
-
-.hero{
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-
-    background:
-    linear-gradient(
-    rgba(0,0,0,.65),
-    rgba(0,0,0,.85)
-    ),
-    url("background.jpg");
-
-    background-size:cover;
-    background-position:center;
-}
-
-.hero h1{
-    font-size:70px;
-    color:#9cff00;
-}
-
-.hero p{
-    margin:20px 0;
-    color:#ddd;
-}
-
-button{
-    padding:15px 40px;
-    border:none;
-    border-radius:50px;
-    background:#9cff00;
-    cursor:pointer;
-    font-size:18px;
-    font-weight:bold;
-}.about{
-    padding:100px 80px;
-    text-align:center;
-    background:#111;
-}
-
-.about h2{
-    font-size:45px;
-    color:#9cff00;
-    margin-bottom:20px;
-}
-
-.about p{
-    color:#ccc;
-    max-width:700px;
-    margin:auto;
-}
-
-
-.cards{
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    margin-top:50px;
-}
-
-
-.card{
-    background:#1a1a1a;
-    padding:30px;
-    width:300px;
-    border-radius:20px;
-    transition:.3s;
-    border:1px solid #222;
-}
-
-
-.card:hover{
-    transform:translateY(-10px);
-    border-color:#9cff00;
-}
-
-
-.card h3{
-    color:#9cff00;
-    margin-bottom:15px;
-}
-
-
-.card p{
-    color:#aaa;
-}html{
-    scroll-behavior:smooth;
-}
-
-
-/* HERO ANIMATION */
-.hero-content{
-    animation:fadeUp 1.2s ease;
-}
-
-
-@keyframes fadeUp{
-    from{
-        opacity:0;
-        transform:translateY(40px);
-    }
-
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-
-
-/* BUTTON EFFECT */
-button{
-    transition:.3s;
-}
-
-
-button:hover{
-    transform:scale(1.1);
-    box-shadow:0 0 25px #9cff00;
-}
-
-
-/* NAVBAR EFFECT */
-.navbar{
-    z-index:1000;
-}.portfolio{
-    padding:100px 80px;
-    text-align:center;
-    background:#090909;
-}
-
-.portfolio h2{
-    font-size:45px;
-    color:#9cff00;
-    margin-bottom:50px;
-}
-
-
-.gallery{
-    display:flex;
-    justify-content:center;
-    gap:30px;
-}
-
-
-.work{
-    width:300px;
-    background:#111;
-    border-radius:20px;
-    overflow:hidden;
-    transition:.3s;
-}
-
-
-.work:hover{
-    transform:translateY(-10px);
-}
-
-
-.work img{
-    width:100%;
-    height:200px;
-    object-fit:cover;
-}
-
-
-.work h3{
-    padding:20px;
-    color:white;
-}.contact{
-
-    padding:100px 80px;
-    text-align:center;
-    background:#111;
-
-}
-
-
-.contact h2{
-
-    font-size:45px;
-    color:#9cff00;
-    margin-bottom:20px;
-
-}
-
-
-.contact p{
-
-    color:#ccc;
-    margin-bottom:40px;
-
-}
-
-
-
-.social{
-
-    display:flex;
-    justify-content:center;
-    gap:20px;
-
-}
-
-
-
-.social a{
-
-    text-decoration:none;
-    color:white;
-    background:#1a1a1a;
-    padding:15px 30px;
-    border-radius:50px;
-    border:1px solid #333;
-    transition:.3s;
-
-}
-
-
-
-.social a:hover{
-
-    background:#9cff00;
-    color:black;
-    transform:translateY(-5px);
-
-}
-
-
-
-
-footer{
-
-    padding:30px;
-    text-align:center;
-    background:#050505;
-
-}
-
-
-
-footer h3{
-
-    color:#9cff00;
-    font-size:25px;
-    margin-bottom:10px;
-
-}
-
-
-
-footer p{
-
-    color:#777;
-
-}@media(max-width:768px){
-
-    .navbar{
-        padding:20px;
-        flex-direction:column;
-        gap:20px;
-    }
-
-
-    nav a{
-        margin:0 10px;
-        font-size:14px;
-    }
-
-
-    .hero h1{
-        font-size:45px;
-    }
-
-
-    .about,
-    .portfolio,
-    .contact{
-        padding:70px 20px;
-    }
-
-
-    .cards,
-    .gallery{
-        flex-direction:column;
-        align-items:center;
-    }
-
-
-    .card,
-    .work{
-        width:90%;
-    }
-
-
-    .social{
-        flex-direction:column;
-        align-items:center;
-    }
-
-
-    .social a{
-        width:200px;
-    }
-
-}/* ================= NAVBAR DROPDOWN ================= */
+/* ================= NAVBAR DROPDOWN PREMIUM ================= */
 
 .nav-dropdown{
-    position:relative;
-    display:inline-block;
+position:relative;
+display:inline-block;
 }
 
+/* BUTTON HOME / CONTACT */
+
 .nav-btn{
-    cursor:pointer;
+cursor:pointer;
+position:relative;
+transition:.3s ease;
 }
 
 .nav-btn span{
-    font-size:10px;
-    margin-left:5px;
-    transition:.3s;
+display:inline-block;
+font-size:9px;
+margin-left:5px;
+transition:.4s ease;
 }
 
+/* HOVER HOME / CONTACT */
 
-/* DROPDOWN MENU */
+.nav-btn:hover{
+color:#9cff00;
+text-shadow:
+0 0 8px #9cff00,
+0 0 18px rgba(156,255,0,.6);
+}
+
+/* ARROW ROTATION */
+
+.nav-dropdown:hover .nav-btn span{
+transform:rotate(180deg);
+color:#9cff00;
+}
+
+/* ================= DROPDOWN BOX ================= */
 
 .dropdown-menu{
-    position:absolute;
-    top:35px;
-    left:0;
+position:absolute;
 
-    min-width:170px;
+```
+top:42px;
+left:50%;
 
-    background:rgba(10,10,10,.95);
-    backdrop-filter:blur(15px);
+min-width:190px;
 
-    border:1px solid #222;
-    border-radius:15px;
+background:rgba(8,8,8,.96);
+backdrop-filter:blur(18px);
 
-    padding:10px;
+border:1px solid rgba(156,255,0,.25);
+border-radius:16px;
 
-    opacity:0;
-    visibility:hidden;
-    transform:translateY(-10px);
+padding:10px;
 
-    transition:.3s;
+/* Hidden state */
+opacity:0;
+visibility:hidden;
 
-    box-shadow:0 10px 30px rgba(0,0,0,.5);
+transform:translate(-50%, -15px) scale(.95);
+
+transform-origin:top center;
+
+transition:
+    opacity .3s ease,
+    transform .4s cubic-bezier(.16,1,.3,1),
+    visibility .3s;
+
+box-shadow:
+    0 10px 35px rgba(0,0,0,.7),
+    0 0 0 rgba(156,255,0,0);
+```
+
 }
 
-
-/* SHOW DROPDOWN */
+/* ================= OPEN DROPDOWN ================= */
 
 .dropdown-menu.show{
-    opacity:1;
-    visibility:visible;
-    transform:translateY(0);
+opacity:1;
+visibility:visible;
+
+```
+transform:translate(-50%, 0) scale(1);
+
+box-shadow:
+    0 10px 35px rgba(0,0,0,.7),
+    0 0 25px rgba(156,255,0,.12);
+```
+
 }
 
-
-/* DROPDOWN LINKS */
+/* ================= DROPDOWN LINKS ================= */
 
 .dropdown-menu a{
-    display:block;
 
-    margin:0;
-    padding:12px 15px;
+```
+display:block;
 
-    color:white;
-    text-decoration:none;
+margin:0;
+padding:13px 16px;
 
-    border-radius:10px;
+color:#ddd;
 
-    transition:.3s;
+text-decoration:none;
+
+border-radius:11px;
+
+position:relative;
+overflow:hidden;
+
+transition:
+    color .3s ease,
+    background .3s ease,
+    transform .3s ease,
+    box-shadow .3s ease;
+```
+
 }
 
+/* GREEN LIGHT EFFECT */
+
+.dropdown-menu a::before{
+
+```
+content:"";
+
+position:absolute;
+
+left:0;
+top:0;
+
+width:3px;
+height:100%;
+
+background:#9cff00;
+
+transform:scaleY(0);
+
+transform-origin:center;
+
+transition:.3s ease;
+```
+
+}
+
+/* HOVER ITEM */
 
 .dropdown-menu a:hover{
-    background:#9cff00;
-    color:black;
 
-    transform:translateX(5px);
+```
+color:#9cff00;
+
+background:rgba(156,255,0,.08);
+
+transform:translateX(6px);
+
+box-shadow:
+    0 0 10px rgba(156,255,0,.15),
+    inset 0 0 15px rgba(156,255,0,.04);
+```
+
 }
 
+/* GREEN BAR APPEARS */
 
-/* NAVBAR ARROW */
+.dropdown-menu a:hover::before{
 
-.nav-dropdown .nav-btn:hover span{
-    color:#9cff00;
+```
+transform:scaleY(1);
+
+box-shadow:
+    0 0 8px #9cff00,
+    0 0 15px #9cff00;
+```
+
 }
 
+/* ================= DROPDOWN GLOW ================= */
 
-/* SHOP NOW LINK */
+.dropdown-menu.show a{
+animation:dropdownItem .45s ease both;
+}
+
+/* ITEM ANIMATION */
+
+@keyframes dropdownItem{
+
+```
+from{
+    opacity:0;
+    transform:translateY(-8px);
+}
+
+to{
+    opacity:1;
+    transform:translateY(0);
+}
+```
+
+}
+
+/* ================= SHOP NOW ================= */
 
 .shop-now{
-    display:inline-block;
 
-    padding:15px 40px;
+```
+display:inline-block;
 
-    border-radius:50px;
+padding:15px 40px;
 
-    background:#9cff00;
-    color:black;
+border-radius:50px;
 
-    text-decoration:none;
+background:#9cff00;
 
-    font-size:18px;
-    font-weight:bold;
+color:black;
 
-    transition:.3s;
+text-decoration:none;
+
+font-size:18px;
+font-weight:bold;
+
+transition:.3s ease;
+```
+
 }
 
-
 .shop-now:hover{
-    transform:scale(1.1);
-    box-shadow:0 0 25px #9cff00;
+
+```
+transform:scale(1.1);
+
+box-shadow:
+    0 0 10px #9cff00,
+    0 0 25px #9cff00,
+    0 0 45px rgba(156,255,0,.5);
+```
+
 }
