@@ -354,4 +354,114 @@ footer p{
         width:200px;
     }
 
+}/* ================= NAVBAR DROPDOWN ================= */
+
+.nav-dropdown{
+    position:relative;
+    display:inline-block;
+}
+
+.nav-btn{
+    cursor:pointer;
+}
+
+.nav-btn span{
+    font-size:10px;
+    margin-left:5px;
+    transition:.3s;
+}
+
+
+/* DROPDOWN MENU */
+
+.dropdown-menu{
+    position:absolute;
+    top:35px;
+    left:0;
+
+    min-width:170px;
+
+    background:rgba(10,10,10,.95);
+    backdrop-filter:blur(15px);
+
+    border:1px solid #222;
+    border-radius:15px;
+
+    padding:10px;
+
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(-10px);
+
+    transition:.3s;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.5);
+}
+
+
+/* SHOW DROPDOWN */
+
+.dropdown-menu.show{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+}
+
+
+/* DROPDOWN LINKS */
+
+.dropdown-menu a{
+    display:block;
+
+    margin:0;
+    padding:12px 15px;
+
+    color:white;
+    text-decoration:none;
+
+    border-radius:10px;
+
+    transition:.3s;
+}
+
+
+.dropdown-menu a:hover{
+    background:#9cff00;
+    color:black;
+
+    transform:translateX(5px);
+}
+
+
+/* NAVBAR ARROW */
+
+.nav-dropdown .nav-btn:hover span{
+    color:#9cff00;
+}
+
+
+/* SHOP NOW LINK */
+
+.shop-now{
+    display:inline-block;
+
+    padding:15px 40px;
+
+    border-radius:50px;
+
+    background:#9cff00;
+    color:black;
+
+    text-decoration:none;
+
+    font-size:18px;
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+
+.shop-now:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 25px #9cff00;
 }
