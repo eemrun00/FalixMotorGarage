@@ -24,14 +24,52 @@
     </div>
 
     <nav>
-        <a href="#">Home</a>
-        <a href="#">Shop</a>
+
+        <!-- HOME DROPDOWN -->
+        <div class="nav-dropdown">
+
+            <a href="#" class="nav-btn" onclick="toggleMenu('homeMenu')">
+                Home <span>▼</span>
+            </a>
+
+            <div class="dropdown-menu" id="homeMenu">
+
+                <a href="#product">Product</a>
+                <a href="#service">Service</a>
+
+            </div>
+
+        </div>
+
+
+        <!-- SHOP -->
+        <a href="#shop">Shop</a>
+
+
+        <!-- PROMOTION -->
         <a href="#">Promotion</a>
-        <a href="#">Contact</a>
+
+
+        <!-- CONTACT DROPDOWN -->
+        <div class="nav-dropdown">
+
+            <a href="#" class="nav-btn" onclick="toggleMenu('contactMenu')">
+                Contact <span>▼</span>
+            </a>
+
+            <div class="dropdown-menu" id="contactMenu">
+
+                <a href="tel:+60123456789">
+                    📞 017-5317916
+                </a>
+
+            </div>
+
+        </div>
+
     </nav>
 
 </header>
-
 <section class="hero">
 
     <div class="hero-content">
